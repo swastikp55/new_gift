@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gift Box Page CSS */
+#gift-box-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    font-family: "Leckerli One", cursive;
+    background-image: url('./mediafiles/birthday-party-items-green-background-with-colorful-confetti.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15vh;
+    /* background-color: green; */
+}
+.gift-box{
+    height: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gift-box>img{
+    height: 40vh;
+    width: 40vw;
+    animation: pop 500ms infinite;
+    cursor: pointer;
+}
+
+@keyframes pop {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.gift-text{
+    border: 7px solid rgb(255, 151, 169);
+    background-color: rgb(255, 242, 0);
+    color: red;
+    padding: 2vh 1vh;
+    border-radius: 10px 20px 10px 20px;
+    animation: MoveUpDown 1s linear infinite;
+    text-align: center;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+}
+
+
+/* Message Page CSS */
+
+#message-page-body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./mediafiles/roses-frame-3176667_960_720.jpg'); 
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Leckerli One", cursive;
+}
+
+.container-message{
+    width: 85%;
+    height: 85%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.up-part{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+}
+.up-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.up-left>img{
+    width: 100%;
+    height: 100%;
+}
+.up-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: skyblue; */
+    text-align: center;
+    padding: 5px;
+}
+.up-right>p{
+    font-size: x-small;
+    text-shadow: 1px 1px 10px yellow;
+    color: rgb(17, 0, 255);
+}
+
+h1{
+    color: red;
+    font-size: medium;
+    text-shadow: 1px 1px 10px white;
+}
+
+.down-part{
+    height: 50%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+}
+.down-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: skyblue; */
+    text-align: center;
+    padding: 5px;
+}
+.down-left>p{
+    font-size: x-small;
+    text-shadow: 1px 1px 10px yellow;
+    color: rgb(17, 0, 255);
+}
+.down-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.down-right>img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Updated Party Poppers */
+.popper {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    animation: fall 3s linear infinite;
+    opacity: 0.7;
+    top: -100px; /* Start above the screen */
+  }
+  
+  @keyframes fall {
+    0% { transform: translateY(-100px); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+  
